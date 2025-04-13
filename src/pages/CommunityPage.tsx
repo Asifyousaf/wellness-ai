@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Filter, MessageCircle, Heart, Share2, Calendar, TrendingUp } from 'lucide-react';
+import { Search, MessageCircle, Heart, Share2, Calendar, TrendingUp } from 'lucide-react';
 import { format } from 'date-fns';
 import { useCommunityStore } from '../store/communityStore';
 import { useAuthStore } from '../store/authStore';
@@ -8,7 +8,7 @@ import { useAuthStore } from '../store/authStore';
 export const CommunityPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
-  const { posts, fetchPosts, addPost, likePost, addComment } = useCommunityStore();
+  const { posts, fetchPosts, addPost, likePost } = useCommunityStore();
   const { user } = useAuthStore();
   const [newPostContent, setNewPostContent] = useState('');
 

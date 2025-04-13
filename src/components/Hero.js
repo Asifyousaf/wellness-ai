@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 
-export const Hero = () => {
+export function Hero() {
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -43,4 +43,4 @@ export const Hero = () => {
       </div>
     </motion.div>
   );
-};
+}

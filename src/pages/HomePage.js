@@ -5,7 +5,7 @@ import { Dashboard } from '../components/Dashboard';
 import { DraggableDashboard } from '../components/DraggableDashboard';
 import { CommunitySection } from '../components/CommunitySection';
 
-export const HomePage = () => {
+export function HomePage() {
   return (
     <>
       <Hero />
@@ -15,4 +15,4 @@ export const HomePage = () => {
       <CommunitySection />
     </>
   );
-};
+}

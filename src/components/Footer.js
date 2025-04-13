@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Instagram, Youtube, Heart } from 'lucide-react';
 
-export const Footer = () => {
+export function Footer() {
   const socialLinks = [
     { icon: Facebook, label: 'Facebook' },
     { icon: Twitter, label: 'Twitter' },
@@ -77,4 +77,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+}

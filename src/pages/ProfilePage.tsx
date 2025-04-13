@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, Settings, History, Heart, Calendar, Bell } from 'lucide-react';
+import { Settings, History, Heart, Calendar, Bell } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 
 export const ProfilePage = () => {
